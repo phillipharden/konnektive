@@ -1,3 +1,4 @@
+/*^ STYLES RESET */
 html,
 body,
 div,
@@ -165,59 +166,67 @@ h2 {
 }
 
 .bold {
-
     font-weight: 700 !important;
-}
-
-/*^ LAYOUT  */
-.container {
-    max-width: 1400px !important;
-    margin: 0 auto !important;
-}
-
-.hero-content {
-    padding-right: 226px !important;
-}
-
-
-#formBox {
-    border-radius: 10px;
-    background-color: #ffffff;
-}
-
-.nav-item {
-    font-size: 1.6rem;
-}
-
-.nav-link {
-    color: #ffffff !important;
-}
-
-.nav-link:hover {
-    color: #000000 !important;
-}
-
-.navArea {
-    padding: 30px 0 70px;
 }
 
 .red-text {
     color: #EB2D3F;
 }
 
+/*^ LAYOUT  */
+
+section{
+
+    padding: 32px 0;
+}
+
+.container {
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+}
+
+/*^ HEADER */
+
+/*^ NAV */
+
+.nav-item {
+    font-size: 1.6rem;
+}
+
+.navArea {
+    padding: 30px 0;
+}
+
+.hero-content {
+    padding-right: 226px !important;
+}
+
+#formBox {
+    border-radius: 10px;
+}
+
+/*^ SOLUTIONS SECTION */
+#solutions{ 
+    background-color: #f9f9ff;
+}
+
+/*^ SALES SECTION */
 
 .sales {
-    background-color: #EB2D3F;
+    padding: 32px 0;
+    background-color: #000000;
     color: #ffffff;
+}
+.sales .btn {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 /*^ BUTTONS  */
-.sales .btn {
-    background-color: #ffffff;
-    color: #EB2D3F;
-}
 
-/* .login-btn{
+
+
+.login-btn{
     color: #ffffff !important;
     font-size: 1.6rem !important;
     border: 1px solid #ffffff !important;
@@ -228,38 +237,17 @@ h2 {
     color: #ffffff !important;
     font-size: 1.6rem !important;
     border: 1px solid #ffffff !important;
-    border-radius: 50px !important;
+    border-radius: 5px !important;
     padding: 4px 16px !important;
     margin: 0 4px !important;
-} */
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*^ ANIMATIONS */
 
 .fadeInDown {
-
     animation-name: fadeInDown;
-
 }
 
 .fadeInDown {
@@ -269,7 +257,6 @@ h2 {
     animation: fadeInDown 1s ease-out forwards;
     margin-left: -30px;
 }
-
 
 @keyframes fadeInDown {
     from {
@@ -282,13 +269,9 @@ h2 {
         transform: translateY(0);
     }
 }
-
-
-header {
-    background-image: url(assets/headerbg.jpg);
-}
+/*^ FOOTER */
 
 footer {
-    background-color: #EB2D3F;
+    background-color: #000000;
     color: #ffffff;
 }
