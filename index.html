@@ -8,6 +8,10 @@
         content="If you’re looking for a powerful CRM that can help revolutionize your business and its needs then look no further than Konnektive. Check out all the services we offer and schedule a demo.">
     <!-- Styling -->
     <link rel="stylesheet" href="styles.css">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -16,98 +20,162 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="assets/headerlogo.png" alt="Konnektive logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testimonials">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Partners</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#solutions">Solutions</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#features">Features</a>
-                        </li>
-
-                    </ul>
+        <div class="navArea">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="assets/headerlogo.png" alt="Konnektive logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testimonials">Testimonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Partners</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#solutions">Solutions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#features">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-outline-primary btn-outline-danger">Login</button>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-outline-secondary btn-outline-danger">Sign
+                                    Up</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <main>
+            </nav>
+        </div>
         <section id="solutions">
             <div class="row container m-auto">
-                <div class="col border">
-                    <h1>One Of The World's <span class="red-text">Most Powerful CRMs</span></h1>
+                <div class="col col-lg-8 col-md-7 hero-content">
+                    <h1>One Of The World's <span class="red-text"><strong>Most Powerful CRMs</strong></span></h1>
                     <p>Build, Grow, and Scale faster than ever with Konnektive</p>
-                    <h2>e-Commerce <span class="red-text">Reimagined...</span></h2>
+                    <h2>e-Commerce <span class="red-text"><strong>Reimagined...</strong></span></h2>
                     <p>Straight Sale, Subscription Billing, Membership, Subscription Box, One-Click Upsells and So Much
                         More...</p>
                     <h2>Lightning Fast Load Speeds</h2>
                     <button class="btn text-uppercase">I want a demo</button>
                     <h3>Taking Entrepreneurs and Companies to the Next Level</h3>
                     <div class="row">
-                        <div class="col">
+                        <div class="col text-center">
                             <p>Over</p>
-                            <p class="red-text">50K</p>
+                            <p class="red-text bold">50K</p>
                             <p>Users on Konnektive</p>
                         </div>
-                        <div class="col">
+                        <div class="col text-center">
                             <p>Over</p>
-                            <p class="red-text">100M</p>
+                            <p class="red-text bold">100M</p>
                             <p>Transactions In 2020</p>
                         </div>
-                        <div class="col">
+                        <div class="col text-center">
                             <p>Over</p>
-                            <p class="red-text">$6B</p>
+                            <p class="red-text bold">$6B</p>
                             <p>Processed In 2020</p>
                         </div>
                     </div>
                 </div>
-                <div class="col col-5 border">2</div>
-            </div>
-            <div class="container m-auto">
-                <h2 class="text-center"><span class="red-text">Konnektive</span> is one of the most powerful, most
-                    customizable tool ever built for taking orders online.
-                </h2>
-                <p>There's a reason we're the <span class="red-text">#1 CRM</span> of choice for both smaller <span
-                        class="red-text">start-ups</span> and booming <span class="red-text">9 figure
-                        businesses</span>. That is the reason we are never satisfied. Every day, we improve and optimize
-                    our
-                    platform to tailor it to your needs and keep up with the latest trends.</p>
-                <p>Not only will the tools in <span class="red-text">Konnektive</span> make you <span
-                        class="red-text">more money</span>, they are also very <span class="red-text">simple to
-                        use</span>. With the <span class="red-text">click of a button</span>, you can see every
-                    statistic you need to track <span class="red-text">performance</span> and <span
-                        class="red-text">revenue</span>. Navigating
-                    through our user-friendly interface is effortless, easy, and fun.</p>
-                <p>All of your data is just <span class="red-text">one click away</span> so you can make <span
-                        class="red-text">faster</span>, <span class="red-text">smarter</span> business decisions. You
-                    can
-                    spend time on the things that really matter. All while never worrying about whether your data is
-                    accurate or organized.</p>
-                <p>Whether you have custom built websites or sales pages, or you are using website building tool and
-                    hosting service or both; <span class="red-text">Konnektive</span> gives you the ability to centralize all of your business
-                    processes within the CRM. <span class="red-text">Konnektive's CRM</span> becomes the <span class="red-text">hub of your business</span>, running and managing
-                    all of your sales transactions, customer service, product fulfillment management, sales tracking,
-                    <span class="red-text">and MORE</span>.</p>
-                <p>If you are running any kind of billing structure, straight sale, monthly subscription, or membership
-                    billing model, there is <span class="red-text">no better system</span> than <span class="red-text">Konnektive</span> for you to manage the <span class="red-text">entire backend of
+                <div class="col col-lg-4 col-md-5" id="formBox">
+                    <div class="m-2 p-5">
+                        <h2>Get More Results, <span class="red-text"><strong>Work Less</strong></span>
+                        </h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp"
+                                    placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="fisrtName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp"
+                                    placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="fisrtName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp"
+                                    placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="fisrtName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp"
+                                    placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+
+
+
+
+
+    </header>
+    <main>
+
+
+        </div>
+        <div class="container m-auto">
+            <h2 class="text-center"><span class="red-text"><strong>Konnektive</strong></span> is one of the most
+                powerful, most
+                customizable tool ever built for taking orders online.
+            </h2>
+            <p>There's a reason we're the <span class="red-text">#1 CRM</span> of choice for both smaller <span
+                    class="red-text">start-ups</span> and booming <span class="red-text">9 figure
+                    businesses</span>. That is the reason we are never satisfied. Every day, we improve and optimize
+                our
+                platform to tailor it to your needs and keep up with the latest trends.</p>
+            <p>Not only will the tools in <span class="red-text">Konnektive</span> make you <span class="red-text">more
+                    money</span>, they are also very <span class="red-text">simple to
+                    use</span>. With the <span class="red-text">click of a button</span>, you can see every
+                statistic you need to track <span class="red-text">performance</span> and <span
+                    class="red-text">revenue</span>. Navigating
+                through our user-friendly interface is effortless, easy, and fun.</p>
+            <p>All of your data is just <span class="red-text">one click away</span> so you can make <span
+                    class="red-text">faster</span>, <span class="red-text">smarter</span> business decisions. You
+                can
+                spend time on the things that really matter. All while never worrying about whether your data is
+                accurate or organized.</p>
+            <p>Whether you have custom built websites or sales pages, or you are using website building tool and
+                hosting service or both; <span class="red-text">Konnektive</span> gives you the ability to
+                centralize all of your business
+                processes within the CRM. <span class="red-text">Konnektive's CRM</span> becomes the <span
+                    class="red-text">hub of your business</span>, running and managing
+                all of your sales transactions, customer service, product fulfillment management, sales tracking,
+                <span class="red-text">and MORE</span>.
+            </p>
+            <p>If you are running any kind of billing structure, straight sale, monthly subscription, or membership
+                billing model, there is <span class="red-text">no better system</span> than <span
+                    class="red-text">Konnektive</span> for you to manage the <span class="red-text">entire backend
+                    of
                     your business</span>.</p>
-                <button class="btn text-uppercase">I want a demo</button>
-            </div>
+            <button class="btn text-uppercase">I want a demo</button>
+        </div>
         </section>
         <section id="testimonials">
             <div class="container m-auto">
