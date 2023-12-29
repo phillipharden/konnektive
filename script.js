@@ -11,6 +11,9 @@ for (let i = 0; i < marqueeElementsDisplayed; i++) {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
 
+//^ TESTIMONIAL CAROUSEL ----------------------------------------------------------------
+
+
 //^ CHANGING TEXT IN HERO SECTION ----------------------------------------------------------------
 // Function to change the text in a specific order and loop back to the beginning
 function changeText() {
@@ -44,6 +47,11 @@ function changeText() {
 // Call the changeText function every 3 seconds
 setInterval(changeText, 3000);
 
+//^ GO TO FORM ----------------------------------------------------------------
+function redirectToForm() {
+  window.location.href = '#formBox';
+}
+
 //^   BACK TO TOP BUTTON ----------------------------------------------------------------
 // Get the button
 let backToTopButton = document.getElementById('backToTopBtn');
@@ -69,7 +77,7 @@ function topFunction() {
 
 
 
-//^ Fade In Down Animation Delay
+//^ Fade In Down Animation Delay ----------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
   var fadeInItems = document.querySelectorAll(".fadeInDown");
 
@@ -80,3 +88,17 @@ document.addEventListener("DOMContentLoaded", function () {
     item.style.animationDelay = index * .1 + "s";
   });
 }); 
+
+
+//^ SHOW URL INPUT FIELD -----------------------------------------------------------------------
+function showWebsiteInput() {
+  var websiteInput = document.getElementById('websiteInput');
+  websiteInput.style.maxHeight = '300px'; 
+  websiteInput.style.overflow = 'visible';
+}
+
+function hideWebsiteInput() {
+  var websiteInput = document.getElementById('websiteInput');
+  websiteInput.style.maxHeight = '0';
+  websiteInput.style.overflow = 'hidden';
+}

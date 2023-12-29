@@ -48,7 +48,7 @@
         <nav class="navbar navbar-expand-lg">
           <div class="container">
             <a class="navbar-brand" href="#"
-              ><img src="assets/headerlogo.png" alt="Konnektive logo"
+              ><img src="assets/konnecktive-logo-blk.png" alt="Konnektive logo"
             /></a>
             <button
               class="navbar-toggler"
@@ -110,8 +110,8 @@
     <main>
       <!--^ SOLUTIONS SECTION ------------------------------------------------------>
       <section id="solutions">
-        <div class="row container m-auto">
-          <div class="col col-lg-8 col-md-7 hero-content">
+        <div class="container m-auto row solutions">
+          <div class="col-12 col-lg-8 col-md-7 hero-content">
             <h1 class="mb-5">
               One Of The World's
               <span class="red-text"><strong>Most Powerful CRMs</strong></span>
@@ -121,24 +121,27 @@
             </p>
             <h4 class="mb-5">
               e-Commerce
-              <span class="red-text"><strong>Reimagined...</strong></span>
+              <span class="red-text">Reimagined...</span>
             </h4>
             <p class="mb-5">
               Straight Sale, Subscription Billing, Membership, Subscription Box,
               One-Click Upsells and So Much More...
             </p>
             <h4 id="changingFeaturesText" class="mb-5">No Hidden Fees</h4>
-            <button class="btn text-uppercase mb-5 mt-5">I want a demo</button>
+            <button class="btn main-btn my-btn mb-5 mt-5 text-uppercase">
+              I Want a Demo
+            </button>
             <h4 class="mb-5">
-              Taking Entrepreneurs and Companies to the Next Level
+              Taking Entrepreneurs and Companies to the
+              <span class="red-text">Next Level</span>
             </h4>
-            <div class="row mb-5 fullfillment">
+            <div class="row mb-5">
               <div class="col text-center mx-5">
                 <p>Over</p>
                 <p class="red-text bold fullfillments">50K</p>
                 <p>Users on Konnektive</p>
               </div>
-              <div class="col text-center mx-5 middle-div">
+              <div class="col text-center mx-5">
                 <p>Over</p>
                 <p class="red-text bold fullfillments">100M</p>
                 <p>Transactions In 2020</p>
@@ -152,11 +155,11 @@
           </div>
 
           <!--^ FREE DEMO FORM ------------------------------------------------------>
-          <div class="col col-lg-4 col-md-5" id="formBox">
+          <div class="col-12 col-lg-4 col-md-5" id="formBox">
             <div class="m-2 p-5">
-              <h4>
+              <h4 class="text-center bold mb-5">
                 Get More Results,
-                <span class="red-text"><strong>Work Less</strong></span>
+                <span class="red-text bold">Work Less</span>
               </h4>
               <form class="demo-form">
                 <div class="form-group mb-3">
@@ -209,15 +212,18 @@
                     placeholder="Enter email"
                   />
                 </div>
+
                 <div class="form-group mb-3">
-                  <label>Do you have a website?</label>
+                  <label class="semi-bold">Do you have a website?</label>
                   <div class="row">
                     <div class="col">
                       <div class="form-check">
                         <input
-                          type="checkbox"
+                          type="radio"
                           class="form-check-input"
                           id="websiteYes"
+                          name="websiteOption"
+                          onclick="showWebsiteInput()"
                         />
                         <label class="form-check-label" for="websiteYes"
                           >Yes</label
@@ -227,9 +233,11 @@
                     <div class="col">
                       <div class="form-check">
                         <input
-                          type="checkbox"
+                          type="radio"
                           class="form-check-input"
                           id="websiteNo"
+                          name="websiteOption"
+                          onclick="hideWebsiteInput()"
                         />
                         <label class="form-check-label" for="websiteNo"
                           >No</label
@@ -238,6 +246,22 @@
                     </div>
                   </div>
                 </div>
+
+                <div
+                  id="websiteInput"
+                  class="form-group mb-3 slide-down"
+                  style="max-height: 0; overflow: hidden"
+                >
+                  <label class="d-none">Enter the URL of your website:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="websiteUrl"
+                    name="websiteUrl"
+                    placeholder="Enter website url"
+                  />
+                </div>
+
                 <button type="submit" class="btn main-btn my-btn">
                   Get Free Demo
                 </button>
@@ -246,8 +270,8 @@
           </div>
         </div>
       </section>
-      <!--^  TESTIMONIAL SECTION ------------------------------------------------------>
-      <section id="testimonial">
+      <!--^  ABOUT SECTION ------------------------------------------------------>
+      <section id="about">
         <div class="container m-auto">
           <h2 class="text-center px-5 mb-5">
             <span class="red-text"><strong>Konnektive</strong></span> is one of
@@ -301,7 +325,7 @@
           </p>
           <div class="d-flex justify-content-center">
             <button class="btn main-btn my-btn text-uppercase">
-              I want a demo
+              I need a demo
             </button>
           </div>
         </div>
@@ -312,38 +336,341 @@
         class="testimonials d-flex justify-content-center"
       >
         <div class="container m-auto">
-          <h2>What Our Fantastic Customers Are Saying</h2>
-          <div class="row">
-            <div class="col">
-              <h3>Testimonial 1</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Eligendi cumque quos iste asperiores in ab minus quasi ratione
-                blanditiis iure corrupti molestias non repellat rem saepe amet,
-                magni consectetur quam architecto. Mollitia tenetur error nihil.
-              </p>
-            </div>
-            <div class="col">
-              <h3>Testimonial 1</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Eligendi cumque quos iste asperiores in ab minus quasi ratione
-                blanditiis iure corrupti molestias non repellat rem saepe amet,
-                magni consectetur quam architecto. Mollitia tenetur error nihil.
-              </p>
-            </div>
-            <div class="col">
-              <h3>Testimonial 1</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Eligendi cumque quos iste asperiores in ab minus quasi ratione
-                blanditiis iure corrupti molestias non repellat rem saepe amet,
-                magni consectetur quam architecto. Mollitia tenetur error nihil.
-              </p>
+          <h2 class="text-center">What Our Fantastic Customers Are Saying</h2>
+
+          <div class="outline">
+            <div class="testimonials-carousel">
+              <ul class="testimonials-carousel-content">
+                <li>
+                  <div>
+                    <div>
+                      <h5>Exceeding Expectations Years Later</h5>
+                      <h6>
+                        It's been great working with these guys. We've watched
+                        this system develop over the many years we've used
+                        Konnektive. From its early beginnings, to what it is
+                        today. We know of no other software CRM that intuitively
+                        provides the necessary framework to allow success in the
+                        world of Ecommerce and online payments. We highly
+                        recommend their knowledgeable staff.
+                      </h6>
+                    </div>
+                    <div class="text-center">
+                      <h4>Steve B. <span>Owner</span></h4>
+                      <img alt="star" src="assets/star.png" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <div>
+                      <h5>
+                        An Asset in the Fast-Paced World of Digital Commerce
+                      </h5>
+                      <h6>
+                        I've been running a combination of eCommerce and direct
+                        response campaigns for 6 years and have been running my
+                        business on Konnektive for 5 of those years. From a
+                        revenue standpoint they can support any billing model
+                        you can think of and support multiple post-cart
+                        one-click upsell purchases that some other competitors
+                        would normally charge fees for. Their 3rd party
+                        integrations and plugins are VAST. From fulfillment,
+                        fraud protection, email providers and call center
+                        technology, the ability to get plugged in is typically
+                        only a few short clicks away and adding in some API
+                        credentials.
+                        <!-- They are also set up to support almost any payment gateway you can think
+                            of...where a lot of others fall short or lock you into a specific processor or solution. As most business owners know, if you are lucky enough to experience success and growth, a lot of times that comes with outgrowing
+                            your current infrastructure - whether its software, office, or people. On the software side, Konnektive has always been a step ahead in being able to help us with that growth in the world of e-commerce and Direct Response. -->
+                      </h6>
+                    </div>
+                    <div class="text-center">
+                      <!-- <img src="images/i3.png" class="pic"> -->
+                      <h4>Chris B. <span>Owner</span></h4>
+                      <img alt="star" src="assets/star.png" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <div>
+                      <h5>I Highly Recommend Konnektive to Everyone</h5>
+                      <h6>
+                        I own several businesses, all of which have benefited
+                        greatly from Konnektive CRM. I had used just about every
+                        other CRM out there and left them for failing in one
+                        area or another. I've been using Konnektive for years
+                        and haven't even thought about leaving. Their customer
+                        service &amp; tech support have been there to resolve
+                        any issues whenever I've needed them. I highly recommend
+                        Konnektive to everyone.... well, everyone except for my
+                        competitors... I don't tell them about Konnektive.
+                      </h6>
+                    </div>
+                    <div class="text-center">
+                      <h4>David R.<span>Owner</span></h4>
+                      <img alt="star" src="assets/star.png" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <div>
+                      <h5>So glad we made the switch from Shopify</h5>
+                      <h6>
+                        My business has been on Konnektive's Shopify Checkout
+                        for the past 2 years and we could not be happier. The
+                        customer service is great, but more importantly, the
+                        system is built for us to continue scaling because of
+                        the smart technology + integrations available to the
+                        customers. Before joining Konnektive our customer AOV
+                        was $85 and after the first three months on Konnektive,
+                        it was over $140 and growing, allowing us to grow our
+                        business even greater since we were able to create more
+                        revenue.
+                      </h6>
+                    </div>
+                    <div class="text-center">
+                      <h4>Serge E. <span>Owner</span></h4>
+                      <img alt="star" src="assets/star.png" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <div>
+                      <h5>Konnektive has SAVED my business!</h5>
+                      <h6>
+                        Konnektive has SAVED my business! We spent hundreds of
+                        thousands of dollars trying to build our own CRM and it
+                        doesn't even come close to the functionality and
+                        integrations that Konnektive has. Their customer service
+                        is always available, and we couldn't be happier. -
+                        Raphael S.
+                      </h6>
+                    </div>
+                    <div class="text-center">
+                      <h4>Raphael S. <span>Owner</span></h4>
+                      <img alt="star" src="assets/star.png" />
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div>
+                    <div>
+                      <h5>Konnektive is insane</h5>
+                      <h6>
+                        Konnektive is insane! I HIGHLY recommend it. Why...
+                        because it does everything you could imagine for a
+                        ridiculously low rate. Works great for Nutra and better
+                        than Shopify and WooCommerce for single product
+                        ecommerce sites. Tried Sticky and then quickly moved
+                        over, and so glad I did. Couldn't recommend it enough!
+                      </h6>
+                    </div>
+                    <div class="text-center">
+                      <h4>Ryan <span>Owner</span></h4>
+                      <img alt="star" src="assets/star.png" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <div>
+                      <h5>10+ Years of Excellence</h5>
+                      <h6>
+                        I have worked with the Konnektive team for 10 years and
+                        each year they continue to impress me with the most
+                        functional products and innovative solutions for
+                        advertisers and brand owners. <br />
+                        <br />
+                        Konnektive is one of the few partnerships that has
+                        continued to grow and meet the needs of my changing
+                        business over the years. The CRM is the most user
+                        friendly I have used with robust reporting and with the
+                        recent updates and additions it is my one stop solution
+                        for everything I need to build pages and manage order
+                        flow for my business.
+                      </h6>
+                    </div>
+                    <div class="text-center">
+                      <h4>Desiree D <span>President/CEO</span></h4>
+                      <img alt="star" src="assets/star.png" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <div>
+                      <h5>Konnektive has Revolutionized my Business…</h5>
+                      <h6>
+                        Konnektive has revolutionized my business with its
+                        speed, agility and feature set. Could not imagine
+                        running any sort of e-commerce on any other platform!
+                        The support team is prompt and helpful, couldn't ask for
+                        more!
+                      </h6>
+                    </div>
+                    <div class="text-center">
+                      <h4>Alexis H.<span>Owner</span></h4>
+                      <img alt="star" src="assets/star.png" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <div>
+                      <h5>It's a Beast of a CRM</h5>
+                      <h6>
+                        I've worked with the team at Konnektive for years. It's
+                        great to see the team is always improving it and adding
+                        features. It's a beast of a CRM and highly recommended!
+                      </h6>
+                    </div>
+                    <div class="text-center">
+                      <h4>Alexander A. <span>President/CEO</span></h4>
+                      <img alt="star" src="assets/star.png" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <div>
+                      <h5>Hands Down the Best Performing CRM</h5>
+                      <h6>
+                        The Best Performing CRM we have ever used, and we have
+                        tried all the top 5. Aside from functionality the
+                        customer service being so responsive is what sets them
+                        apart completely from the competition.
+                      </h6>
+                    </div>
+                    <div class="text-center">
+                      <h4>Anthony A.<span>Small Business Owner</span></h4>
+                      <img alt="star" src="assets/star.png" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <div>
+                      <h5>Exceeding Expectations Years Later</h5>
+                      <h6>
+                        It's been great working with these guys. We've watched
+                        this system develop over the many years we've used
+                        Konnektive. From its early beginnings, to what it is
+                        today. We know of no other software CRM that intuitively
+                        provides the necessary framework to allow success in the
+                        world of Ecommerce and online payments. We highly
+                        recommend their knowledgeable staff.
+                      </h6>
+                    </div>
+                    <div class="text-center">
+                      <h4>Steve B. <span>Owner</span></h4>
+                      <img alt="star" src="assets/star.png" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <div>
+                      <h5>
+                        An Asset in the Fast-Paced World of Digital Commerce
+                      </h5>
+                      <h6>
+                        I've been running a combination of eCommerce and direct
+                        response campaigns for 6 years and have been running my
+                        business on Konnektive for 5 of those years. From a
+                        revenue standpoint they can support any billing model
+                        you can think of and support multiple post-cart
+                        one-click upsell purchases that some other competitors
+                        would normally charge fees for. Their 3rd party
+                        integrations and plugins are VAST. From fulfillment,
+                        fraud protection, email providers and call center
+                        technology, the ability to get plugged in is typically
+                        only a few short clicks away and adding in some API
+                        credentials.
+                        </h6>
+                    </div>
+                    <div class="text-center">
+                      <h4>Chris B. <span>Owner</span></h4>
+                      <img alt="star" src="assets/star.png" />
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div>
+                    <div>
+                      <h5>I Highly Recommend Konnektive to Everyone</h5>
+                      <h6>
+                        I own several businesses, all of which have benefited
+                        greatly from Konnektive CRM. I had used just about every
+                        other CRM out there and left them for failing in one
+                        area or another. I've been using Konnektive for years
+                        and haven't even thought about leaving. Their customer
+                        service &amp; tech support have been there to resolve
+                        any issues whenever I've needed them. I highly recommend
+                        Konnektive to everyone.... well, everyone except for my
+                        competitors... I don't tell them about Konnektive.
+                      </h6>
+                    </div>
+                    <div class="text-center">
+                      <h4>David R.<span>Owner</span></h4>
+                      <img alt="star" src="assets/star.png" />
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div>
+                    <div>
+                      <h5>So glad we made the switch from Shopify</h5>
+                      <h6>
+                        My business has been on Konnektive's Shopify Checkout
+                        for the past 2 years and we could not be happier. The
+                        customer service is great, but more importantly, the
+                        system is built for us to continue scaling because of
+                        the smart technology + integrations available to the
+                        customers. Before joining Konnektive our customer AOV
+                        was $85 and after the first three months on Konnektive,
+                        it was over $140 and growing, allowing us to grow our
+                        business even greater since we were able to create more
+                        revenue.
+                      </h6>
+                    </div>
+                    <div class="text-center">
+                      <h4>Serge E. <span>Owner</span></h4>
+                      <img alt="star" src="assets/star.png" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <div>
+                      <h5>Konnektive has SAVED my business!</h5>
+                      <h6>
+                        Konnektive has SAVED my business! We spent hundreds of
+                        thousands of dollars trying to build our own CRM and it
+                        doesn't even come close to the functionality and
+                        integrations that Konnektive has. Their customer service
+                        is always available, and we couldn't be happier. -
+                        Raphael S.
+                      </h6>
+                    </div>
+                    <div class="text-center">
+                      <h4>Raphael S. <span>Owner</span></h4>
+                      <img alt="star" src="assets/star.png" />
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="d-flex justify-content-center">
-            <button class="btn main-btn btn-primary">Show Me More</button>
+            <button class="btn main-btn btn-primary" onclick="redirectToForm()">Show Me More</button>
+
           </div>
         </div>
       </section>
@@ -395,6 +722,7 @@
           <!--^ PARTNERS MARQUEE ------------------------------------------------------>
           <div class="partners-marquee">
             <h2 class="mb-5">Trusted Partners</h2>
+
             <div class="marquee">
               <ul class="marquee-content">
                 <li>
@@ -739,7 +1067,7 @@
       <!--^ FEATURES SECTION ------------------------------------------------------>
       <section id="features">
         <div class="container m-auto">
-          <div class="features ">
+          <div class="features">
             <div>
               <h2>
                 Work <span class="red-text bold">smarter</span>, not
@@ -1005,9 +1333,12 @@
       <div class="container">
         <div class="row">
           <div class="col col-lg-3 col-md-12 col-12 mb-5">
-            <img src="assets/footerlogo.png" alt="Konnective LLC logo" />
-            <h4>800 270 8701</h4>
-            <h4>info@konnektive.com</h4>
+            <img
+              src="assets/konnektive-logo-all-white.png"
+              alt="Konnective LLC logo"
+            />
+            <p><a href="tel:+18002708701">800 270 8701</a></p>
+            <p><a href="mailto:info@konnektive.com">info@konnektive.com</a></p>
           </div>
           <div class="col col-lg-2 col-md-5 col-6">
             <h4>Navigation</h4>

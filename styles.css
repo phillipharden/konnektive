@@ -1,3 +1,12 @@
+/*^ TROUBLESHOOT */
+.outline {
+  outline: 2px solid red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
 /*^ STYLES RESET */
 html,
 body,
@@ -148,7 +157,7 @@ body {
   background-color: #fff;
 }
 
-/*^ TYPOGRAPHY */
+/*^ TYPOGRAPHY *************************************************************************************/
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
 
 html {
@@ -171,11 +180,13 @@ sup {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.9rem;
   line-height: 1.2;
+  color: #212121;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 4.3rem !important;
   font-weight: 700 !important;
   color: #212121;
@@ -189,7 +200,15 @@ h4,
 h5,
 h6 {
   font-size: 2.8rem !important;
-  font-weight: 700 !important;
+  font-weight: 500 !important;
+}
+
+.form-headline {
+  font-size: 2.5rem;
+}
+
+.semi-bold {
+  font-weight: 600 !important;
 }
 
 .bold {
@@ -203,7 +222,7 @@ h6 {
 /*^ LAYOUT  */
 
 section {
-  padding: 32px 0;
+  padding: 50px 0;
 }
 
 .container {
@@ -214,7 +233,10 @@ section {
 /*^ HEADER *****************************************************************/
 
 /*^ NAV *****************************************************************/
-
+header img{
+  width: 300px;
+  height: auto;
+}
 .nav-item {
   font-size: 1.6rem;
 }
@@ -223,15 +245,26 @@ section {
   padding: 10px 0;
 }
 
+/*^ SOLUTIONS SECTION *****************************************************************/
+
+
+
 .hero-content {
   padding-right: 226px !important;
 }
-
-#formBox {
-  border-radius: 10px;
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 1200px) {
+  .hero-content {
+    padding-right: 32px !important;
+  }
 }
 
-/*^ SOLUTIONS SECTION *****************************************************************/
+@media (max-width: 992px) {
+  .hero-content {
+    padding-right: 16px !important;
+  }
+}
+
 #solutions {
   background-color: #f9f9ff;
 }
@@ -239,14 +272,6 @@ section {
 #changingFeaturesText {
   font-size: 4rem;
   font-weight: 500;
-}
-.fullfillment {
-  position: relative;
-}
-.middle-div {
-  position: absolute;
-  top: -20px;
-  left: 0;
 }
 
 .fullfillment p {
@@ -258,6 +283,12 @@ section {
 }
 
 /*^ FORM */
+#formBox {
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: -2px 2px 10px #D3D3D3;
+}
+
 .demo-form {
   font-size: 1.6rem;
 }
@@ -274,6 +305,35 @@ section {
   color: #fff !important;
   background-color: #eb2d3f !important;
 }
+
+input {
+  padding: 16px !important;
+  margin: 16px 0 !important;
+}
+
+.form-check{
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.form-check input {
+  border-radius: 50% !important;
+  margin-right: 8px !important;
+}
+
+/*^ ABOUT SECTION *****************************************************************/
+#about{
+  background-color: #f9f9ff;
+}
+
+/*^ TESTIMONIALS SECTION *****************************************************************/
+#testimonials {
+  background-color: #f9f9ff;
+}
+
 
 /*^ SALES SECTION *****************************************************************/
 
@@ -296,12 +356,9 @@ section {
   align-items: center;
 }
 
-/*^ TESTIMONIALS SECTION *****************************************************************/
-#testimonials{
-  background-color: #000;
-}
 
-/*^  *****************************************************************/
+
+
 
 /*^  FEATURES *****************************************************************/
 
@@ -322,6 +379,13 @@ footer {
   padding: 64px 0 16px;
 }
 
+footer img {
+  width: 250px;
+}
+
+footer p {
+  color: #ffffff;
+}
 footer a {
   text-decoration: none;
   font-size: 1.6rem;
@@ -362,7 +426,7 @@ footer a:hover {
   background-image: url('assets/icons/linkedin.png');
 }
 
-.copyright {
+.copyright, .copyright a {
   font-size: 1.4rem;
   padding: 64px 0;
 }
@@ -423,28 +487,30 @@ footer a:hover {
 }
 .my-btn:hover {
   transform: translateY(-0.3rem);
+  box-shadow: 0px 15px 20px -15px #eb2d3f;
 }
+
 .my-btn:hover::after {
   transform: scale(1.4, 1.6);
   opacity: 0;
 }
 .my-btn:active {
   transform: translateY(-0.1rem);
+  box-shadow: none !important;
 }
 
-.main-btn{
-    color: #fff !important;
-    background-color: #eb2d3f !important;
-    font-size: 2.4rem !important;
-    font-weight: 500;
-    border: 1px solid #eb2d3f !important;
-    border-radius: 50px !important;
-    padding: 8px 32px !important;
-    margin: 16px 4px !important;
+.main-btn {
+  color: #fff !important;
+  background-color: #eb2d3f !important;
+  font-size: 2.4rem !important;
+  font-weight: 500;
+  border: 1px solid #eb2d3f !important;
+  border-radius: 50px !important;
+  padding: 8px 32px !important;
+  margin: 16px 4px !important;
 }
 
 /*^ ANIMATIONS */
-
 
 @keyframes fadeInDown {
   0% {
@@ -457,10 +523,41 @@ footer a:hover {
   }
 }
 
+/*^ TESTIMONIALS CAROUSEL ********************************************/
+#testimonials {
+  overflow: hidden;
+}
+
+.testimonials-carousel-content {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 15s linear infinite;
+}
+
+.testimonial {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 
 
-/*^ MARQUEE */
+/*^ MARQUEE PARTNERS **********************************************************/
 .trusted-partners {
   display: flex;
   justify-content: center;
@@ -471,7 +568,6 @@ footer a:hover {
   --marquee-width: 100vw;
   --marquee-height: 20vh;
   --marquee-height: auto;
-  /* --marquee-elements: 12; */ /* defined with JavaScript */
   --marquee-elements-displayed: 8;
   --marquee-element-width: calc(
     var(--marquee-width) / var(--marquee-elements-displayed)
@@ -530,13 +626,11 @@ footer a:hover {
   flex-shrink: 0;
   width: var(--marquee-element-width);
   max-height: 100%;
-  font-size: calc(var(--marquee-height) * 3 / 4); /* 5rem; */
   white-space: nowrap;
 }
 
 .marquee-content li img {
   width: 100%;
-  /* height: 100%; */
 }
 
 @media (max-width: 600px) {
@@ -549,4 +643,12 @@ footer a:hover {
   .marquee:after {
     width: 5rem;
   }
+}
+
+
+/*^ URL INOUT SLIDE EFFECT */
+.slide-down {
+  max-height: 300px; 
+  overflow: hidden;
+  transition: max-height .7s ease-in-out;
 }
