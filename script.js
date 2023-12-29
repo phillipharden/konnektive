@@ -66,3 +66,17 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+
+//^ Fade In Down Animation Delay
+document.addEventListener("DOMContentLoaded", function () {
+  var fadeInItems = document.querySelectorAll(".fadeInDown");
+
+  fadeInItems.forEach(function (item, index) {
+    item.style.opacity = "0";
+    item.style.animation = "fadeInDown 0.7s ease-in-out";
+    item.style.animationFillMode = "both";
+    item.style.animationDelay = index * .1 + "s";
+  });
+}); 

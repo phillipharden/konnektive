@@ -303,7 +303,16 @@ section {
 
 /*^  *****************************************************************/
 
-/*^  *****************************************************************/
+/*^  FEATURES *****************************************************************/
+
+/* .features{
+  display: grid;
+  place-items: center;
+}
+
+.features-one, .features-two {
+width: 50%;
+} */
 
 /*^ FOOTER *****************************************************************/
 
@@ -436,29 +445,20 @@ footer a:hover {
 
 /*^ ANIMATIONS */
 
-.fadeInDown {
-  animation-name: fadeInDown;
-}
-
-.fadeInDown {
-  animation-delay: 3.7s;
-  opacity: 0;
-  transform: translateY(-50px);
-  animation: fadeInDown 1s ease-out forwards;
-  margin-left: -30px;
-}
 
 @keyframes fadeInDown {
-  from {
+  0% {
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(-20px);
   }
-
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
+
+
 
 /*^ MARQUEE */
 .trusted-partners {
